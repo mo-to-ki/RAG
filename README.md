@@ -10,13 +10,13 @@
 このファイルで、作成したデータを使った RAG を作成します。
 
 ## docker を使った demo 開発
-docker image と　container を作成する
+docker image と container を作成する
 ```shell
 docker compose up -d
 ```
 起動している container に入る
 ```shell
-docker container exec -it rag-container
+docker container exec -it rag-container /bin/bash
 ```
 
 ## 作成したコードの実行
