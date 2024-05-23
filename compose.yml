@@ -1,0 +1,10 @@
+services:
+  rag:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: rag-image # image name の指定
+    container_name: rag-container # container name の指定
+    volumes: # ホスト側のディレクトリをコンテナ側にマウント
+      - .:/rag
+    tty: true
