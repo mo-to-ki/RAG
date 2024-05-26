@@ -19,7 +19,14 @@ docker compose up -d
 docker container exec -it rag-container /bin/bash
 ```
 
-## 作成したコードの実行
+## RAG開発の準備
+jupyter notebook を docker 内の環境で実行
+```python
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser  --allow-root
+```
+表示された URL をブラウザで開き edit_docs.ipynb を開く
+
+## 開発したシステムの実行
 ```shell
 python rag.py
 ```
